@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@media (prefers-color-scheme: light) {
+  @theme {
+    --color-text: #363845;
+    --color-background: #ffffff;
+    --color-primary: #22489b;
+    --color-primary-hover: #2958bc; /*5% lighter*/
+    --color-secondary: #5e7ce2;
+    --color-tertiary: #7898eb;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text: #ffffff;
+    --color-background: #363845;
+    --color-primary: #7898eb;
+    --color-primary-hover: #5e7ce2; /*5% lighter*/
+    --color-secondary: #22489b;
+    --color-tertiary: #2958bc;
+  }
+}

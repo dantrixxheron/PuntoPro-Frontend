@@ -1,7 +1,6 @@
 import "./Login.css";
 export default function Login() {
   return (
-    <>
     <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <img
@@ -27,7 +26,7 @@ export default function Login() {
                   type="email"
                   required
                   autoComplete="email"
-                  className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-text outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                  className="block w-full rounded-md bg-background px-3 py-1.5  text-text outline-1 -outline-offset-1 outline-primary focus:outline-2 focus:-outline-offset-2 focus:outline-primary sm:text-sm/6"
                 />
               </div>
             </div>
@@ -45,7 +44,7 @@ export default function Login() {
                   type="password"
                   required
                   autoComplete="current-password"
-                  className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-text outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                  className="block w-full rounded-md bg-background px-3 py-1.5 text-base text-text outline-1 -outline-offset-1 outline-primary focus:outline-2 focus:-outline-offset-2 focus:outline-primary sm:text-sm/6"
                 />
               </div>
             </div>
@@ -61,6 +60,5 @@ export default function Login() {
           </form>
         </div>
       </div>
-    </>
   );
 }
