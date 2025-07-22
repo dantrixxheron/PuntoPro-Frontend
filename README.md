@@ -1,5 +1,7 @@
 # PuntoPro
 
+***You can find the [Spanish version of this README](README.ES.md)***. 🌎
+
 **PuntoPro** is a digital tool designed for microbusinesses that want to take their sales to the next level. It offers a simple and accessible way to manage sales digitally, helping to formalize processes and improve record organization.
 
 ## 🧩 Purpose
