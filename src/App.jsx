@@ -1,13 +1,16 @@
 
 import './App.css'
 import Login from './Components/Login'
+import Sales from './Components/Sales'
+import { UserProvider} from './Context/UserContext'
 
 function App() {
 
   return (
-    <div className='bg-background min-h-screen flex items-center justify-center'>
-      <Login />
-    </div>
+      <UserProvider>
+          <Login />
+          <Sales />
+      </UserProvider>
   )
 }
 
