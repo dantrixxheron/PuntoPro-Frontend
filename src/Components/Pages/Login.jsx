@@ -1,6 +1,5 @@
-import { useUser } from "../Context/UserContext";
+import { useUser } from "../../Context/UserContext";
 import { useForm } from "react-hook-form";
-import "./Login.css";
 export default function Login() {
   // implemetation of useForm for mangin form state and validation
   const { mail, login } = useUser();

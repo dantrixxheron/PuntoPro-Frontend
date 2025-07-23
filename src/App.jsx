@@ -1,7 +1,7 @@
 
 import './App.css'
-import Login from './Components/Login'
-import Sales from './Components/Sales'
+import Login from './Components/Pages/Login'
+import Sales from './Components/Pages/Sales'
 import { UserProvider} from './Context/UserContext'
 
 function App() {
