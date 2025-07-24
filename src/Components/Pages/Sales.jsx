@@ -1,13 +1,15 @@
 import { useUser } from "../../Context/UserContext";
+import Sidebar from "../Sidebar";
+import '../styles/sales.css';
 
 export default function Sales() {
     const {mail} =useUser();
     if(!mail) return null;
     return(
-        <>
-        <form>
-            
-        </form>
-        </>
+        <div className="flex flex-row h-screen bg-background text-text">
+        <Sidebar>
+            <p>Hola mundo</p>
+        </Sidebar>
+        </div>
     );
 }
