@@ -6,8 +6,10 @@ import { TbInvoice } from "react-icons/tb";
 import { MdAdd, MdHistory, MdOutlineClose, MdOutlineLogout, MdOutlineQueryStats, MdOutlineSettings, MdOutlineShoppingBasket, MdSettings } from "react-icons/md";
 import { FaBars } from "react-icons/fa6";
 import Statusbar from "./Statusbar";
+import { useUser } from "../Context/UserContext";
 
 export default function Sidebar({children}) {
+  const { logout } = useUser();
   const [showVentasOptions, setShowVentasOptions] = useState(false);
   const [isOpenBar, setIsOpenBar] = useState(false);
   return(
@@ -79,7 +81,7 @@ export default function Sidebar({children}) {
             </a>
           </ul>
         </nav>
-        <button className="py-2 px-4 text-text bg-transparent hover:bg-red-200 dark:hover:bg-red-900 dark:hover:text-white rounded-md transition-colors duration-200 flex items-center justify-left">
+        <button onClick={logout} className="py-2 px-4 text-text bg-transparent hover:bg-red-200 dark:hover:bg-red-900 dark:hover:text-white rounded-md transition-colors duration-200 flex items-center justify-left">
           <MdOutlineLogout className="inline-block size-5 mr-1 text-text-secondary" />
           <span className={`md:block ${isOpenBar?'block':'hidden'}`}>Cerrar sesión</span> 
         </button>

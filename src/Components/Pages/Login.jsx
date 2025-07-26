@@ -3,13 +3,13 @@ import { useForm } from "react-hook-form";
 export default function Login() {
   // implemetation of useForm for mangin form state and validation
   const { user, login } = useUser();
-  const { register,handleSubmit, formState: { errors }} = useForm();
+  const { register,handleSubmit, formState: { errors }, reset} = useForm();
 
   if(user) return null;
 
   const onSubmit = (data)=>{
-    console.log(data);
     login(data.mail,data.password);
+    reset();
   }
   return (
     <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
