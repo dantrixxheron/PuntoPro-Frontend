@@ -2,10 +2,10 @@ import { useUser } from "../../Context/UserContext";
 import { useForm } from "react-hook-form";
 export default function Login() {
   // implemetation of useForm for mangin form state and validation
-  const { mail, login } = useUser();
+  const { user, login } = useUser();
   const { register,handleSubmit, formState: { errors }} = useForm();
 
-  if(mail) return null;
+  if(user) return null;
 
   const onSubmit = (data)=>{
     console.log(data);

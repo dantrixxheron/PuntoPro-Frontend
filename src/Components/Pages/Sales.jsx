@@ -3,8 +3,8 @@ import Sidebar from "../Sidebar";
 import '../styles/sales.css';
 
 export default function Sales() {
-    const {mail} =useUser();
-    if(!mail) return null;
+    const {user} =useUser();
+    if(!user) return null;
     return(
         <div className="flex flex-row h-screen bg-background text-text">
         <Sidebar>
