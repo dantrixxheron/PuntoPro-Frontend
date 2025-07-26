@@ -5,6 +5,7 @@ import { GrStorage } from "react-icons/gr";
 import { TbInvoice } from "react-icons/tb";
 import { MdAdd, MdHistory, MdOutlineClose, MdOutlineLogout, MdOutlineQueryStats, MdOutlineSettings, MdOutlineShoppingBasket, MdSettings } from "react-icons/md";
 import { FaBars } from "react-icons/fa6";
+import Statusbar from "./Statusbar";
 
 export default function Sidebar({children}) {
   const [showVentasOptions, setShowVentasOptions] = useState(false);
@@ -83,8 +84,8 @@ export default function Sidebar({children}) {
           <span className={`md:block ${isOpenBar?'block':'hidden'}`}>Cerrar sesión</span> 
         </button>
       </div>
-      <div className="flex-grow p-2.5 bg-background text-text">
-        {/* Aquí va el contenido principal de la página */}
+      <div className="flex-grow p-0 bg-background text-text">
+        <Statusbar />
         {children}
       </div>
     </>
