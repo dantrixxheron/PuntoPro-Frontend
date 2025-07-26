@@ -4,6 +4,8 @@
   @theme {
     --color-text: #363845;
     --color-background: #ffffff;
+    --color-background-secondary: #f8f9fa;
+    --color-text-secondary: #4E565A;
     --color-primary: #22489b;
     --color-primary-hover: #2958bc; /*5% lighter*/
     --color-secondary: #5e7ce2;
@@ -14,6 +16,8 @@
   :root {
     --color-text: #ffffff;
     --color-background: #363845;
+    --color-background-secondary: #2c2f3a;
+    --color-text-secondary: #b0b3c6;
     --color-primary: #7898eb;
     --color-primary-hover: #5e7ce2; /*5% lighter*/
     --color-secondary: #22489b;
