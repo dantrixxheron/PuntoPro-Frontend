@@ -26,65 +26,8 @@ Muchas microempresas carecen de herramientas accesibles y adaptadas a sus necesi
 
 
 ## 🧱 Modelo de Datos
-
-```
-USER
-- id_user (PK)
-- name
-- email
-- passwd
-- role (admin/casher/skateholder)
-
-PRODUCT
-- id_product (PK)
-- name
-- code
-- price_txEx
-- price_txIn
-- stock
-- category_id (FK)
-
-SALE
-- id_sale (PK)
-- date
-- subtotal
-- tax
-- total
-- payment_type (cash/card)
-- status (paid/unpaid)
-- user_id (FK) as casher
-
-SALE_DETAIL
-- id_detail (PK)
-- product_id (FK)
-- quantity
-- unit_price
-- subtotal
-- sale_id (FK)
-
-CATEGORY
-- id_category (PK)
-- name
-
-COMPANY
-- id_company (PK)
-- name
-- address
-- phone
-- email
-- logo
-
-INVOICE
-- id_invoice (PK)
-- sale_id (FK)
-- date
-- total
-- name_receiver
-- id_company (FK)
-- archive_path
-
-```
-> Esto se reemplazará luego por un diagrama ER con la información definitiva de la distribución de BD. 
+> Este diagrama fue desarrollado por el visualizador de base de datos de Supabase una vez que las tablas, llaves primarias y llaves foráneas fueron creadas.
+<img width="1538" height="785" alt="supabase-schema-puntopro" src="https://github.com/user-attachments/assets/0037e824-6bfa-463e-af7d-a1fa16b2aea9" />
 
 
 ## 🎨 Maquetado y diseño
